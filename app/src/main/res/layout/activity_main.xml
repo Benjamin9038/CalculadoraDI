@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#C1FFF7">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1Vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2Vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3Vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <Button
+        android:layout_width="104dp"
+        android:layout_height="110dp"
+        android:background="#FB151CDB"
+        android:backgroundTint="#FB151CDB"
+        android:text="0"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndtOf="@+id/guideline1Vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline1horizontal" />
+
+    <Button
+        android:layout_width="104dp"
+        android:layout_height="110dp"
+        android:background="#FB151CDB"
+        android:backgroundTint="#FB151CDB"
+        android:text="."
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndtOf="@+id/guideline2Vertical"
+        app:layout_constraintStart_toStartOf="@id/guideline1Vertical"
+        app:layout_constraintTop_toTopOf="@+id/guideline1horizontal" />
+
+    <Button
+        android:layout_width="104dp"
+        android:layout_height="110dp"
+        android:background="#FB151CDB"
+        android:backgroundTint="#FB151CDB"
+        android:text="="
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/guideline3Vertical"
+        app:layout_constraintStart_toStartOf="@id/guideline2Vertical"
+        app:layout_constraintTop_toTopOf="@+id/guideline1horizontal" />
+
+    <Button
+        android:layout_width="104dp"
+        android:layout_height="110dp"
+        android:background="#FB151CDB"
+        android:backgroundTint="#FB151CDB"
+        android:text="+"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline3Vertical"
+        app:layout_constraintTop_toTopOf="@+id/guideline1horizontal" />
+
+    <Button
+        android:layout_width="104dp"
+        android:layout_height="110dp"
+        android:background="#FB151CDB"
+        android:backgroundTint="#FB151CDB"
+        android:text="1"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline1horizontal"
+        app:layout_constraintEnd_toEndOf="@id/guideline1Vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2horizontal" />
+
+    <Button
+        android:layout_width="104dp"
+        android:layout_height="110dp"
+        android:background="#FB151CDB"
+        android:backgroundTint="#FB151CDB"
+        android:text="2"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline1horizontal"
+        app:layout_constraintEnd_toEndOf="@id/guideline2Vertical"
+        app:layout_constraintStart_toStartOf="@id/guideline1Vertical"
+        app:layout_constraintTop_toTopOf="@+id/guideline2horizontal" />
+
+    <Button
+        android:layout_width="104dp"
+        android:layout_height="110dp"
+        android:background="#FB151CDB"
+        android:backgroundTint="#FB151CDB"
+        android:text="3"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline1horizontal"
+        app:layout_constraintEnd_toEndOf="@id/guideline3Vertical"
+        app:layout_constraintStart_toStartOf="@id/guideline2Vertical"
+        app:layout_constraintTop_toTopOf="@+id/guideline2horizontal" />
+
+    <Button
+        android:layout_width="104dp"
+        android:layout_height="110dp"
+        android:background="#FB151CDB"
+        android:backgroundTint="#FB151CDB"
+        android:text="-"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline1horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline3Vertical"
+        app:layout_constraintTop_toTopOf="@+id/guideline2horizontal" />
+
+    <Button
+        android:layout_width="104dp"
+        android:layout_height="110dp"
+        android:background="#FB151CDB"
+        android:backgroundTint="#FB151CDB"
+        android:text="4"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline2horizontal"
+        app:layout_constraintEnd_toEndOf="@id/guideline1Vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3horizontal" />
+
+    <Button
+        android:layout_width="104dp"
+        android:layout_height="110dp"
+        android:background="#FB151CDB"
+        android:backgroundTint="#FB151CDB"
+        android:text="5"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline2horizontal"
+        app:layout_constraintEnd_toEndOf="@id/guideline2Vertical"
+        app:layout_constraintStart_toStartOf="@id/guideline1Vertical"
+        app:layout_constraintTop_toTopOf="@+id/guideline3horizontal" />
+
+    <Button
+        android:layout_width="104dp"
+        android:layout_height="110dp"
+        android:background="#FB151CDB"
+        android:backgroundTint="#FB151CDB"
+        android:text="6"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline2horizontal"
+        app:layout_constraintEnd_toEndOf="@id/guideline3Vertical"
+        app:layout_constraintStart_toStartOf="@id/guideline2Vertical"
+        app:layout_constraintTop_toTopOf="@+id/guideline3horizontal" />
+
+    <Button
+        android:layout_width="104dp"
+        android:layout_height="110dp"
+        android:background="#FB151CDB"
+        android:backgroundTint="#FB151CDB"
+        android:text="x"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline2horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline3Vertical"
+        app:layout_constraintTop_toTopOf="@+id/guideline3horizontal" />
+
+    <Button
+        android:layout_width="104dp"
+        android:layout_height="110dp"
+        android:background="#FB151CDB"
+        android:backgroundTint="#FB151CDB"
+        android:text="7"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline3horizontal"
+        app:layout_constraintEnd_toEndOf="@id/guideline1Vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline4horizontal" />
+
+    <Button
+        android:layout_width="104dp"
+        android:layout_height="110dp"
+        android:background="#FB151CDB"
+        android:backgroundTint="#FB151CDB"
+        android:text="8"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline3horizontal"
+        app:layout_constraintEnd_toEndOf="@id/guideline2Vertical"
+        app:layout_constraintStart_toStartOf="@id/guideline1Vertical"
+        app:layout_constraintTop_toTopOf="@+id/guideline4horizontal" />
+
+    <Button
+        android:layout_width="104dp"
+        android:layout_height="110dp"
+        android:background="#FB151CDB"
+        android:backgroundTint="#FB151CDB"
+        android:text="9"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline3horizontal"
+        app:layout_constraintEnd_toEndOf="@id/guideline3Vertical"
+        app:layout_constraintStart_toStartOf="@id/guideline2Vertical"
+        app:layout_constraintTop_toTopOf="@+id/guideline4horizontal" />
+
+    <Button
+        android:layout_width="104dp"
+        android:layout_height="110dp"
+        android:background="#FB151CDB"
+        android:backgroundTint="#FB151CDB"
+        android:text="/"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline3horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline3Vertical"
+        app:layout_constraintTop_toTopOf="@+id/guideline4horizontal" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="0.0"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline3Vertical"
+        android:textSize="30dp" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
